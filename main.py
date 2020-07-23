@@ -9,8 +9,8 @@ from PyQt5.QtWidgets import QApplication, QLabel
 
 def mlreq(url, mltimes):
     """
-    header format
-    headerX = {'Range':'bytes=0-X'}
+    header format to download part of file
+    header = {'Range':'bytes=0-X'}
 
     """
     header = requests.head(url)
